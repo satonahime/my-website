@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+  <meta charset="UTF-8">
+  <title>わが家の天使たち</title>
+  <!-- CSSファイルを読み込む -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is my first GitHub Pages deployment!</p>
+  <header>
+    <h1>🐶 わが家のペット紹介 😺</h1>
+  </header>
+
+  <main>
+    <section class="pet-card">
+      <img src="dog.jpg" alt="犬の写真">
+      <h2>ポチ</h2>
+      <p>元気いっぱいの柴犬。お散歩とおやつが大好き！</p>
+    </section>
+
+    <section class="pet-card">
+      <img src="cat.jpg" alt="猫の写真">
+      <h2>ミケ</h2>
+      <p>のんびり屋の三毛猫。日向ぼっこが得意技。</p>
+    </section>
+  </main>
 </body>
 </html>
+
+/* ページ全体のデザイン */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #ffcc99;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #333;
+}
+
+/* ペットカードのデザイン */
+.pet-card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pet-card img {
+  width: 100%;
+  border-radius: 8px;
+}
